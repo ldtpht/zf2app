@@ -1,0 +1,19 @@
+{
+  "name": "zf2app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ldtpht/zf2app",
+  "authors": [
+    "Lam Duc Trung <developers@ownego.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

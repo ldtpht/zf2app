@@ -1,8 +1,8 @@
 <?php
-    $form->setAttribute('action', $this->url('profile', ['action' => 'edit', 'id'=>$id]));
+    $form->setAttribute('action', $this->url('profile', array('action' => 'add')));
     $form->prepare();
 ?>
-<h1>User Registration</h1>
+<h1>Edit User</h1>
 
 <?php echo $this->form()->openTag($form); ?>
 

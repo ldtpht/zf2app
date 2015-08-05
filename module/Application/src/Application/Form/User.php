@@ -19,19 +19,20 @@ class User extends Form
                 ),
         ));
         $this->add(array(
-                'name' => 'address',
-                'type' => 'Text',
-                'options' => array(
-                        'label' => 'Address',
-                ),
+        		'name' => 'address',
+        		'type' => 'Text',
+        		'options' => array(
+        				'label' => 'Address',
+        		),
         ));
         $this->add(array(
-                'name' => 'send',
-                'type' => 'Submit',
-                'attributes' => array(
-                        'value' => 'Send',
-                        'class' => 'btn btn-success'
-                ),
+        		'name' => 'send',
+        		'type' => 'Submit',
+        		'attributes' => array(
+        				'value' => 'Send',
+        				'class' => 'btn btn-success'
+        		),
         ));
-    }
-}
+        }
+        }
+        
