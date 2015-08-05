@@ -82,7 +82,20 @@ return array (
 										) 
 								) 
 						),
-						
+						'api' => array (
+								'type' => 'Segment',
+								'options' => array (
+										'route' => '/api[/:action]',
+										'constraints' => array (
+												'action' => '[a-zA-Z][a-zA-Z0-9_-]*' 
+										),
+										'defaults' => array (
+												'__NAMESPACE__' => 'Application\Controller',
+												'controller' => 'Api',
+												'action' => 'index' 
+										) 
+								) 
+						),
 						// The following is a route to simplify getting started creating
 						// new controllers and actions without needing to create a new
 						// module. Simply drop new controllers in, and you can access them
@@ -139,7 +152,8 @@ return array (
 						'Application\Controller\Test' => 'Application\Controller\TestController',
 						'Application\Controller\Profile' => 'Application\Controller\ProfileController',
 						'Application\Controller\Student' => 'Application\Controller\StudentController',
-						'Application\Controller\Public' => 'Application\Controller\PublicController'	
+						'Application\Controller\Public' => 'Application\Controller\PublicController',
+						'Application\Controller\Api' => 'Application\Controller\ApiController'	
 				) 
 		)
 		,
@@ -157,7 +171,8 @@ return array (
 				),
 				'template_path_stack' => array (
 						__DIR__ . '/../view' 
-				) 
+				),
+				'strategies' => array ( 'ViewJsonStrategy')
 		),
 		
 		// Placeholder for console routes
